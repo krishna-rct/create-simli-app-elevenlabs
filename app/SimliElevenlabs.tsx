@@ -13,6 +13,7 @@ interface SimliElevenlabsProps {
   onStart: () => void;
   onClose: () => void;
   showDottedFace: boolean;
+  language: string;
 }
 
 const simliClient = new SimliClient();
@@ -23,6 +24,7 @@ const SimliElevenlabs: React.FC<SimliElevenlabsProps> = ({
   onStart,
   onClose,
   showDottedFace,
+  language,
 }) => {
   // State management
   const [isLoading, setIsLoading] = useState(false);

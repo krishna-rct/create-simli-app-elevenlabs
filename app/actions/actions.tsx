@@ -115,6 +115,7 @@ export async function getElevenLabsSignedUrl(agentId: string): Promise<{ signed_
     );
 
     if (!response.ok) {
+      console.log(`https://api.elevenlabs.io/v1/convai/conversation/get_signed_url?agent_id=${agentId}`)
       throw new Error(`ElevenLabs API error: ${response.status}`);
     }
 
